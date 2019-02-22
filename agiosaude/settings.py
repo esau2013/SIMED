@@ -73,8 +73,12 @@ WSGI_APPLICATION = 'agiosaude.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd71o4t28jfgin1',
+        'USER': 'xsmeygumrrhkaz',
+        'PASSWORD': 'f95b94a00c894def392a16d8473f6d6f22f11f56ec97aa9ddb570c121f6310de',
+        'HOST': 'ec2-54-83-55-115.compute-1.amazonaws.com',
+        'PORT': 5432
     }
 }
 

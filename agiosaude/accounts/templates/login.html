@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block home %}
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="{% static 'arq/logo_ver.png' %}" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form method="post">
+                {% csrf_token %}
+                <fieldset>
+                    {{ form.non_field_errors }}
+
+                    {% for field in form %}
+                        <div class="fadeIn fourth">
+                            {{ field.label_tag }}
+                            {{ field }}
+                            {{ field.errors }}
+                        </div>
+                    {% endfor %}
+                    <input type="submit" class="fadeIn fourth">
+                </fieldset>
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

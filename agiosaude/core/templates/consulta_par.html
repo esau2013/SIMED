@@ -1,0 +1,136 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-main " id="content-main">
+        <!-- ############ Main START-->
+        <div class="padding">
+            <div class="box">
+                <section class="content-header">
+                    <div class="page-title">
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb" style="padding: 2px 0 0 15px;margin: 0;">
+                                <li class="active" style="font-size: 20px">Ficha de Consulta</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <!-- Main content -->
+                <section class="content" style="padding-top: 0">
+                    <div class="pure-g-r">
+                        <div class="pure">
+                            <div class="l-box">
+                                <div class="row" style="padding: 0px 15px 15px 15px;width: 180px">
+                                    <img src="{% static 'arq/image10.png' %}" style="width: 150px;height: 200px" >
+                                    <div class="form-group" style="padding-top: 15px;margin: 0">
+                                        <a href="#" type="button" class="btn btn-fw primary" style="letter-spacing: normal;width: 150px">Laudo</a>
+                                    </div>
+                                    <div class="form-group" style="padding-top: 15px;margin: 0">
+                                        <a href="#" type="button" class="btn btn-fw primary" style="letter-spacing: normal;width: 150px">Exame</a>
+                                    </div>
+                                    <div class="form-group" style="padding-top: 15px;margin: 0">
+                                        <a href="#" type="button" class="btn btn-fw primary" style="letter-spacing: normal;width: 150px">Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pure-u-2-3" style="width: 85%">
+                            <div class="l-box" style="padding-bottom: 0; padding-right: 0">
+                                <div class="row" style="padding-right: 0">
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Código:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            563456
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Nome:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            Eduardo Paiva das Neves
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Cadastro:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            21/02/2019
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Nascimento:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            21/03/1990
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Sexo:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            Masculino
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Peso:</label>
+                                        <div class="alert alert-dark" style="padding: 0;">
+                                            52 Kg
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label  " style="margin: 0">Altura:</label>
+                                        <div class="alert alert-dark" style="padding: 0">
+                                            1,60 m
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 ; margin: 0">
+                                        <label class="control-label" style="margin: 0">Alergias:</label>
+                                        <div>
+                                            <textarea cols='47' rows="1"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-box" style="padding-top: 0;padding-right: 0">
+                                <div class="row">
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label" style="margin: 0">Queixa Principal:</label>
+                                        <div>
+                                            <textarea cols="64px" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label" style="margin: 0">Historico Medico:</label>
+                                        <div>
+                                            <textarea cols="64px" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label" style="margin: 0">Antecedente pessoais:</label>
+                                        <div>
+                                            <textarea cols="64" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label" style="margin: 0">Antecedente Familiares:</label>
+                                        <div>
+                                            <textarea cols="64" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding: 0 15px 0 0; margin: 0">
+                                        <label class="control-label" style="margin: 0">Observações:</label>
+                                        <div>
+                                            <textarea cols="133px" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding-top: 15px">
+                                        <div class="">
+                                            <button type="submit" class="btn btn-outline b-success text-success"><i></i>Salvar</button>
+                                            <a href="#" class="btn btn-outline b-warning text-warning">Cancelar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

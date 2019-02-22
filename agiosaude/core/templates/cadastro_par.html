@@ -1,0 +1,138 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+    <div class="content-main " id="content-main">
+        <!-- ############ main start-->
+        <div class="padding">
+            <div class="box">
+                <section class="content-header">
+                    <div class="page-title">
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb" style="padding: 2px 0px 0px 15px">
+                                <li class="active" style="font-size: 20px">Novo paciente</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <!-- main content -->
+                <section class="content" style="padding: 0">
+                    <div id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="box-header">
+                                    <div class="panel-body">
+                                        <form action="" method="post" enctype="multipart/form-data" class="input_mask" novalidate="">
+                                            <input type="hidden" name="csrfmiddlewaretoken" value="cycgtyfkjrufvcggplzzzjbnj59sfnv4nkjqwslzidt15rgotevooo5s8zf31bfj">
+                                            <div class="row">
+                                                <div style="width:auto; height:auto;margin-left: 15px;">
+                                                    <div class="form-group">
+                                                        <label class="control-label  " for="id_descricao" style="margin: 0">Nome*</label>
+                                                        <div class=" ">
+                                                            <input type="text" name="descricao" maxlength="100" class=" form-control" required="" id="id_descricao">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="width:auto; height:auto;margin-left: 15px;">
+                                                    <div class="form-group">
+                                                        <label class="control-label  " for="id_sindicato" style="margin: 0">CPF*</label>
+                                                        <div class=" ">
+                                                            <input type="text" name="cbo" maxlength="11" class="num form-control" required="" id="id_cbo" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="width:auto; height:auto;margin-left: 15px">
+                                                    <div class="form-group">
+                                                        <label class="control-label  " for="id_dta_criacao" style="margin: 0">Nascimento*</label>
+                                                        <div class=" ">
+                                                            <input type="text" name="dta_criacao" class="date-field form-control" required="" id="id_dta_criacao" maxlength="10" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="width:auto; height:auto;margin-left: 15px">
+                                                    <div class="form-group">
+                                                        <label class="control-label  " for="id_num_vaga" style="margin: 0">Peso*</label>
+                                                        <div class=" ">
+                                                            <input type="text" name="num_vaga" maxlength="10" class="num form-control" id="id_num_vaga" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="width:auto; height:auto;margin-left: 15px">
+                                                        <div class="form-group">
+                                                            <label class="control-label  " for="id_num_vaga" style="margin: 0">Altura*</label>
+                                                            <div class=" ">
+                                                                <input type="text" name="num_vaga" maxlength="10" class="num form-control" id="id_num_vaga" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <div style="width:auto; height:auto;margin-left: 15px">
+                                                    <div class="form-group">
+                                                        <label class="control-label  " for="id_tipo_criacao" style="margin: 0">Sexo*</label>
+                                                        <div class=" ">
+                                                            <select name="tipo_criacao" class=" form-control" required="" id="id_tipo_criacao">
+                                                                <option value="" selected="">---------</option>
+                                                                <option value="decreto">Masculino</option>
+                                                                <option value="decreto">Feminino</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- ############ aba de configurações-->
+                                            <span class="btn warn btn-block" data-toggle="collapse" href="#collapse1" style="margin-bottom: 15px">
+                                                <i class="fa fa-plus float-left"></i>
+                                                <h3 style="margin: 0; color: white">Dados Opcionais</h3>
+                                            </span>
+                                            <div id="collapse1" class="panel-collapse collapse show">
+                                                <div class="row">
+                                                    <div style="width:auto; height:auto;margin-left: 15px;">
+                                                        <div class="form-group">
+                                                            <label class="control-label  " for="id_descricao" style="margin: 0">Pai</label>
+                                                            <div class=" ">
+                                                                <input type="text" name="descricao" maxlength="100" class=" form-control" required="" id="id_descricao">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="width:auto; height:auto;margin-left: 15px;">
+                                                        <div class="form-group">
+                                                            <label class="control-label  " for="id_cbo" style="margin: 0">Mãe</label>
+                                                            <div class=" ">
+                                                                <input type="text" name="cbo" maxlength="50" class="num form-control" required="" id="id_cbo" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="width:auto; height:auto;margin-left: 15px">
+                                                        <div class="form-group">
+                                                            <label class="control-label  " for="id_carga_horaria" style="margin: 0">Profissão</label>
+                                                            <div class=" ">
+                                                                <input type="text" name="carga_horaria" maxlength="10" class="num form-control" id="id_carga_horaria" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="width:auto; height:auto;margin-left: 15px">
+                                                        <div class="form-group">
+                                                            <label class="control-label  " for="id_carga_horaria" style="margin: 0">Telefone</label>
+                                                            <div class=" ">
+                                                                <input type="text" name="carga_horaria" maxlength="10" class="num form-control" id="id_carga_horaria" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="">
+                                                    <button type="submit" class="btn btn-outline b-success text-success"><i></i>Salvar</button>
+                                                    <a href="#" class="btn btn-outline b-warning text-warning">Cancelar</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

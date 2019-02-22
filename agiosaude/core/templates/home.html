@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block home %}
+    <div class="header" style="font-family: sans-serif">
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+            <img src="{% static 'arq/logo_hor.png' %}" width="200px"/>
+            <ul style="margin: 6px 0px 0px 0px">
+                <li class="pure-menu-selected"><a href="{% url 'core:home' %}">Início</a></li>
+                {# tela de cadastro de medico/paciente#}
+                <li><a href="{% url 'core:cadastro_main' %}">Cadastro</a></li>
+                {# tela de cadastro parcial da "Consulta"(paciente, horario da solicitação, medico)#}
+                <li><a href="{% url 'core:atendimento_main' %}">Atendimento</a></li>
+                {# tela de prencimento da "Consulta" pelo medico("Laudos", "Exames", "Receitas", horario do atendimento, ...)#}
+                <li><a href="{% url 'core:consulta_main' %}">Consultório</a></li>
+                {# tela de consulta e baixa de "Receitas"#}
+                <li><a href="{% url 'core:ambulatorio_main' %}">Ambulatório</a></li>
+                {# tela de relatorios#}
+                <li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Registros</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #56baed">
+                            <a class="dropdown-item" href="{% url 'core:registro_ate' %}">Atendimentos</a>
+                            <a class="dropdown-item" href="{% url 'core:registro_exa' %}">Exames</a>
+                        </div>
+                    </div>
+
+                </li>
+                {# tela de cadastro de Usuários#}
+                <li><a href="{% url 'core:usuario_main' %}">Usuário</a></li>
+                <li><a href="{% url 'accounts:logout' %}">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

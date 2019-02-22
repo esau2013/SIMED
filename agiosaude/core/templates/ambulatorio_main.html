@@ -1,0 +1,243 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-main " id="content-main">
+        <!-- ############ Main START-->
+        <div class="padding">
+            <div class="box">
+                <section class="content-header">
+                    <div class="box-header">
+                        <h3>Receitas Medicas</h3>
+                    </div>
+                    <div class="p-3">
+                        <div class="row" >
+                            <div class="col-md-5">
+{#                                <a href="#" type="button" class="btn btn-fw primary">Novo</a>#}
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Busca" style="background: none;margin: -3px 5px 0px 0px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn white" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Main content -->
+                <section class="content" style="padding-top: 0">
+                    <div id="main-wrapper">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <div class="">
+                                        <table id="example" class="display table bootstrap-grid" style="width: 100%;">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 20%">Paciente</th>
+                                                <th style="width: 10%">CPF</th>
+                                                <th style="width: 12%">Médico</th>
+                                                <th style="width: 20%">Prescrição</th>
+                                                <th style="width: 17%">Ações</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+
+                                                <td>Adolfo Lutz</td>
+                                                <td>03801005097</td>
+                                                <td>Adib Jatene</td>
+                                                <td>Soro/Insulina</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Christian Barnard</td>
+                                                <td>29654870002</td>
+                                                <td>Bernardino Ramazzini</td>
+                                                <td>Analgesico/Anti-Inflamatório</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Eduardo Chapot Prévost</td>
+                                                <td>15155434041</td>
+                                                <td>Carlos Chagas</td>
+                                                <td>Nebulização</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="box">
+                <section class="content-header">
+                    <div class="box-header">
+                        <h3>Exames Medicos</h3>
+                    </div>
+                    <div class="p-3">
+                        <div class="row" >
+                            <div class="col-md-5">
+{#                                <a href="#" type="button" class="btn btn-fw primary">Novo</a>#}
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Busca" style="background: none;margin: -3px 5px 0px 0px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn white" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Main content -->
+                <section class="content" style="padding-top: 0">
+                    <div id="main-wrapper">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <div class="">
+                                        <table id="example" class="display table bootstrap-grid" style="width: 100%;">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 20%">Paciente</th>
+                                                <th style="width: 10%">CPF</th>
+                                                <th style="width: 12%">Médico</th>
+                                                <th style="width: 20%">Prescrição</th>
+                                                <th style="width: 17%">Ações</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+
+                                                <td>Adolfo Lutz</td>
+                                                <td>03801005097</td>
+                                                <td>Adib Jatene</td>
+                                                <td>Sangue</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Christian Barnard</td>
+                                                <td>29654870002</td>
+                                                <td>Bernardino Ramazzini</td>
+                                                <td>Urina</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Eduardo Chapot Prévost</td>
+                                                <td>15155434041</td>
+                                                <td>Carlos Chagas</td>
+                                                <td>Ressonância</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-check-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-- ############ Main END-->
+    </div>
+{% endblock %}

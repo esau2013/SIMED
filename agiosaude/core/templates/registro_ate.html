@@ -1,0 +1,122 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-main " id="content-main">
+        <!-- ############ Main START-->
+        <div class="padding">
+            <div class="box">
+                <section class="content-header">
+                    <div class="box-header">
+                        <h3>Registros de Atendimento</h3>
+                    </div>
+                    <div class="p-3">
+                        <div class="row" >
+                            <div class="col-md-5">
+                                <a href="#" type="button" class="btn btn-fw primary">Imprimir</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Filtrar por:&nbsp</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                                    <label class="form-check-label" for="inlineRadio1">Paciente</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                                    <label class="form-check-label" for="inlineRadio2">Período</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao3">
+                                    <label class="form-check-label" for="inlineRadio3">Medico</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Inicial" style="background: none;margin: -3px 5px 0px 0px;">
+                                    <input type="text" class="form-control" placeholder="Final" style="background: none;margin: -3px 5px 0px 0px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn white" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Main content -->
+                <section class="content" style="padding-top: 0">
+                    <div id="main-wrapper">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <div class="">
+                                        <table id="example" class="display table bootstrap-grid" style="width: 100%;">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 10%">Código</th>
+                                                <th style="width: 20%">Paciente</th>
+                                                <th style="width: 20%">Medico</th>
+                                                <th style="width: 12%">Data do Atendimento</th>
+                                                <th style="width: 17%">Ações</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Adolfo Lutz</td>
+                                                <td>Adib Jatene</td>
+                                                <td>20/03/2019</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-print"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>12</td>
+                                                <td>Christian Barnard</td>
+                                                <td>Bernardino Ramazzini</td>
+                                                <td>21/03/2019</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-print"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>13</td>
+                                                <td>Eduardo Chapot Prévost</td>
+                                                <td>Carlos Chagas</td>
+                                                <td>22/03/2019</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs">
+                                                        <i class="fa fa-print"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" data-url="#" class="btn btn-danger btn-xs fconfirma">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-- ############ Main END-->
+    </div>
+{% endblock %}

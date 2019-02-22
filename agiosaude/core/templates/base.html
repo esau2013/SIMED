@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sistema de Saude{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/pure-min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+</head>
+<body>
+{% block home %}{% endblock %}
+<div class="content">
+{#    {% if messages %}#}
+{#    <div class="pure-g-r content-ribbon">#}
+{#        <aside class="pure-u-1">#}
+{#            {% for message in messages %}#}
+{#            <p>{{ message }}</p>#}
+{#            {% endfor %}#}
+{#        </aside>#}
+{#    </div>#}
+{#    {% endif %}#}
+    {% block content %}{% endblock %}
+    <div class="footer">
+        SIMED - Sistema de Gestão Hospitalar
+    </div>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

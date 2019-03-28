@@ -1,0 +1,53 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+    <div class="content-main " id="content-main">
+        <!-- ############ main start-->
+        <div class="padding">
+            <div class="box">
+                <section class="content-header">
+                    <div class="page-title">
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb" style="padding: 2px 0px 0px 15px">
+                                <li class="active" style="font-size: 20px">Dados Hospitalar</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section class="content" style="padding: 0">
+                    <div id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="box-header">
+                                    <div class="panel-body">
+                                        <form class="pure-form pure-form-stacked" method="post">
+                                            {% csrf_token %}
+                                            <fieldset>
+                                                {{ form.non_field_errors }}
+                                                <div class="row">
+                                                    {% for field in form %}
+                                                        <div style="margin-left: 15px;">
+                                                            <div class="form-group">
+                                                                {{ field.label_tag }}
+                                                                {{ field }}
+                                                                {{ field.errors }}
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                                <div class="pure-controls">
+                                                    <button type="submit" class="btn btn-outline b-success text-success">Salvar</button>
+                                                    <a href="{% url 'core:home' %}" class="btn btn-outline b-warning text-warning">Cancelar</a>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

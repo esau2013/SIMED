@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
+
 @login_required
 def home(request):
     return render(request, 'home.html')
@@ -44,11 +45,3 @@ def registro_ate(request):
 @login_required
 def registro_exa(request):
     return render(request, 'registro_exa.html')
-
-@login_required
-def usuario_main(request):
-    return render(request, 'usuario_main.html')
-
-@login_required
-def usuario_nov(request):
-    return render(request, 'usuario_nov.html')

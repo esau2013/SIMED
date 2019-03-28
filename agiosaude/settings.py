@@ -113,7 +113,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 STATIC_URL = '/static/'
 
@@ -135,24 +135,24 @@ CONTACT_EMAIL = 'esau.t.s@gmail.com'
 LOGIN_URL = 'accounts:login'
 LOGIN_REDIRECT_URL = 'core:home'
 LOGOUT_URL = 'accounts:logout'
-# AUTH_USER_MODEL = 'accounts.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 # Local settings
-# DEBUG = True
-#
-# TEMPLATE_DEBUG = True
-#
-# ALLOWED_HOSTS = []
+DEBUG = True
+
+TEMPLATE_DEBUG = True
+
+ALLOWED_HOSTS = []
 
 # Heroku settings
-import dj_database_url
+# import dj_database_url
 
-DATABASES['default'] = dj_database_url.config()
-
-# Honor the 'X-Forwarded-proto' header for request.id_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
-
-STATIC_ROOT = 'staticfiles'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'agiosaude/core/static'),)
+# DATABASES['default'] = dj_database_url.config()
+#
+# # Honor the 'X-Forwarded-proto' header for request.id_secure()
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#
+# ALLOWED_HOSTS = ['*']
+#
+# STATIC_ROOT = 'staticfiles'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'agiosaude/core/static'),)

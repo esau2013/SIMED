@@ -14,6 +14,4 @@ urlpatterns = [
     path('consulta/eduardo_paiva', views.consulta_par, name='consulta_par'),
     path('resgistro/atendimento', views.registro_ate, name='registro_ate'),
     path('resgistro/exame', views.registro_exa, name='registro_exa'),
-    path('usuario/', views.usuario_main, name='usuario_main'),
-    path('usuario/novo', views.usuario_nov, name='usuario_nov'),
 ]

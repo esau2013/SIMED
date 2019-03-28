@@ -138,21 +138,21 @@ LOGOUT_URL = 'accounts:logout'
 AUTH_USER_MODEL = 'accounts.User'
 
 # Local settings
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
+# DEBUG = True
+#
+# TEMPLATE_DEBUG = True
+#
+# ALLOWED_HOSTS = []
 
 # Heroku settings
-# import dj_database_url
+import dj_database_url
 
-# DATABASES['default'] = dj_database_url.config()
-#
-# # Honor the 'X-Forwarded-proto' header for request.id_secure()
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#
-# ALLOWED_HOSTS = ['*']
-#
-# STATIC_ROOT = 'staticfiles'
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'agiosaude/core/static'),)
+DATABASES['default'] = dj_database_url.config()
+
+# Honor the 'X-Forwarded-proto' header for request.id_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ALLOWED_HOSTS = ['*']
+
+STATIC_ROOT = 'staticfiles'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'agiosaude/core/static'),)

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d32ffae-342a-4a5b-854d-15626906ba0f" name="Default Changelist" comment="" />
+    <list default="true" id="1d32ffae-342a-4a5b-854d-15626906ba0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/core/servers/basehttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/core/servers/basehttp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agiosaude/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/agiosaude/passenger_wsgi.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -238,6 +242,11 @@
               <item name="agiosaude" type="b2602c69:ProjectViewProjectNode" />
               <item name="agiosaude" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="agiosaude" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agiosaude" type="462c0819:PsiDirectoryNode" />
+              <item name="agiosaude" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -352,6 +361,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007474" side_tool="true" weight="0.3289689" />
@@ -359,10 +369,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32838285" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24164134" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -375,7 +386,6 @@
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -550,7 +560,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/agiosaude/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/agiosaude/passenger_wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
@@ -726,8 +736,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>

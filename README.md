@@ -1,1 +1,1 @@
-"# Simed" 
+Bem vindo ao SIMED !
